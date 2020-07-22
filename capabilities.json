@@ -1,0 +1,91 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Measure Data",
+            "name": "measure",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Foreground Color",
+            "name": "foregroundColor",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "dataPoint": {
+            "displayName": "Data colors",
+            "properties": {
+                "defaultColor": {
+                    "displayName": "Default color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "showAllDataPoints": {
+                    "displayName": "Show all",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fill": {
+                    "displayName": "Fill",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fillRule": {
+                    "displayName": "Color saturation",
+                    "type": {
+                        "fill": {}
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Text Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "measure": {
+                        "max": 1
+                    },
+                    "foregroundColor": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "measure"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "foregroundColor"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

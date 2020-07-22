@@ -1,0 +1,25 @@
+{
+    "visual": {
+        "name": "simpleConditionalFormatting",
+        "displayName": "Simple Conditional Formatting",
+        "guid": "simpleConditionalFormatting1A07AEB3F69E4A8B9CB134514C621C41",
+        "visualClassName": "Visual",
+        "version": "1.0.0",
+        "description": "Demonstrates using a measure to format the template visual's text colour.",
+        "supportUrl": "As-is",
+        "gitHubUrl": ""
+    },
+    "apiVersion": "2.6.0",
+    "author": {
+        "name": "Daniel Marsh-Patrick",
+        "email": "daniel@coacervo.co"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
+}
